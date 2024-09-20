@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const popup = document.getElementById('popupContainer');
-    const closeBtn = document.getElementById('closePopup');
-    const iframe = document.querySelector('iframe');
+    const popup = document.getElementById('aileadgen-popupContainer');
+    const closeBtn = document.getElementById('aileadgen-closePopup');
+    const iframe = document.getElementById('aileadgen-iframe');
 
     // Function to show the popup
     window.aileadgenshowPopup = function() {
