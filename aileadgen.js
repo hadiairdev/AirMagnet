@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const popup = document.getElementById('popupContainer');
     const closeBtn = document.getElementById('closePopup');
+    const iframe = document.querySelector('iframe');
 
     // Function to show the popup
     window.aileadgenshowPopup = function() {
@@ -18,4 +19,13 @@ document.addEventListener('DOMContentLoaded', function() {
             popup.style.display = 'none';
         }
     }
+
+    window.addEventListener('message', function(event) {
+        // Optionally check the origin of the message for security
+        // if (event.origin !== "https://example.com") return;
+
+        const height = event.data; // Get the height from the message
+        iframe.style.height = height + 'px'; // Set the iframe height
+    });
+
 });
