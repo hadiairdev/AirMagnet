@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    // Update iframe height dynamically after the content is fully loaded
     window.addEventListener('message', function(event) {
 
         const height = event.data; // Get the height from the message
