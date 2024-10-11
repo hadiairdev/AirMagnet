@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const popup = document.getElementById('aileadgen-popupContainer');
-    const closeBtn = document.getElementById('aileadgen-closePopup');
-    const iframe = document.getElementById('aileadgen-iframe');
+    const popup = document.getElementById('AirMagnet-PopupContainer');
+    const closeBtn = document.getElementById('AirMagnet-ClosePopup');
+    const iframe = document.getElementById('AirMagnet-Iframe');
 
     // Function to show the popup
-    window.aileadgenshowPopup = function() {
+    window.AirMagnetShowPopup = function() {
         popup.style.display = 'block';
     }
 
